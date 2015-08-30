@@ -1,0 +1,55 @@
+{
+  "name": "node-color-readline",
+  "version": "1.0.0",
+  "description": "Node.js 'readline' alternative with support for coloured syntax highlighting and suggestions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aantthony/node-color-readline.git"
+  },
+  "keywords": [
+    "readline",
+    "highlight",
+    "syntax",
+    "colors",
+    "repl"
+  ],
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "mocha": true
+    },
+    "rules": {
+      "consistent-return": 0,
+      "no-return-assign": 0,
+      "key-spacing": 0,
+      "no-multi-spaces": 0,
+      "no-underscore-dangle": 0,
+      "no-use-before-define": [
+        2,
+        "nofunc"
+      ],
+      "curly": [
+        2,
+        "multi-line"
+      ],
+      "quotes": [
+        2,
+        "single"
+      ]
+    }
+  },
+  "author": "Anthony Foster",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aantthony/node-color-readline/issues"
+  },
+  "homepage": "https://github.com/aantthony/node-color-readline#readme",
+  "dependencies": {
+    "ansi": "^0.3.0",
+    "chalk": "^1.1.1"
+  }
+}
