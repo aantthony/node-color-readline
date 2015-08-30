@@ -1,6 +1,10 @@
 # node-color-readline
 Node.js 'readline' alternative with support for coloured syntax highlighting and suggestions.
 
+```sh
+npm install --save node-color-readline
+```
+
 Usage:
 
 ```js
