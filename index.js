@@ -27,6 +27,7 @@ function Interface(options) {
   ReadlineInterface.call(this, options);
 }
 
+Interface.prototype._originalWriteToOutput = ReadlineInterface.prototype._writeToOutput;
 Interface.prototype._writeToOutput = function (stringToWrite) {
   if (stringToWrite === '\r\n' || stringToWrite === ' ') {
     this.output.write(stringToWrite);
@@ -39,6 +40,8 @@ Interface.prototype._writeToOutput = function (stringToWrite) {
     this.output.write(this._prompt);
     stringToWrite = stringToWrite.substring(this._prompt.length);
     renderCurrentLine(this, stringToWrite, true);
+  } else {
+    this._originalWriteToOutput(stringToWrite);
   }
 };
 
