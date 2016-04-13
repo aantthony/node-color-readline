@@ -1,6 +1,6 @@
 {
   "name": "node-color-readline",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node.js 'readline' alternative with support for coloured syntax highlighting and suggestions",
   "main": "index.js",
   "scripts": {
